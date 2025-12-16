@@ -4,13 +4,94 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <link rel="icon" type="image/jpeg" href="images/st-logo-square.jpg">
+  <title>Stranger Things - Home Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Hello, world!</h1>
+  <!-- navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg shadow-sm fixed-top px-sm-3 px-1 py-2">
+    <div class="container-fluid">
+      <div class="navbar-brand">
+        <img class="ms-4 align-text-top" src="images/st-logo.png" height="50" width="150">
+      </div>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item px-lg-3">
+            <a class="nav-link fw-semibold" href="index.html">
+              <i class="bi bi-house-door-fill me-2"></i>Home
+            </a>
+          </li>
+          <li class="nav-item px-lg-3">
+            <a class="nav-link fw-semibold" href="characters.html">
+              <i class="bi bi-people-fill me-2"></i>Characters
+            </a>
+          </li>
+          <li class="nav-item px-lg-3">
+            <a class="nav-link fw-semibold" href="episodes.html">
+              <i class="bi bi-play-circle-fill me-2"></i>Episodes
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5 py-5">
+    <div class="row">
+
+      <div class="col-xl-5 text-center">
+        <img src="images/st-poster.jpg" class="img-fluid p-2 p-sm-0 mb-3">
+      </div>
+
+      <div class="col-xl-7 px-4 d-flex flex-column justify-content-center">
+        <div class="lead mb-3 text-light" style="text-align:justify;">
+          Stranger Things is a sci-fi horror series set in the 1980s in the quiet town of Hawkins, Indiana. The story
+          begins when a young boy mysteriously disappears, leading his friends to uncover a series of strange events
+          involving secret government experiments and a dark parallel world known as the Upside Down. Along the way,
+          they meet Eleven, a girl with powerful psychic abilities who has escaped from a hidden laboratory.
+        </div>
+        <div class="lead text-light" style="text-align:justify;">
+          As the series progresses, the group faces terrifying creatures from the Upside Down while adults in the town
+          uncover their own connections to the mystery. Blending supernatural horror, emotional character development,
+          and strong themes of friendship and loyalty, Stranger Things combines nostalgia with suspense to tell a
+          story about growing up in the face of extraordinary danger.
+        </div>
+
+        <div class="mt-4 text-center">
+          <a href="https://www.imdb.com/title/tt4574334/ratings/" target="_blank" class="btn btn-outline-light me-3">
+            <i class="bi bi-star-fill me-2"></i>View Ratings
+          </a>
+          <a href="https://www.netflix.com/title/80057281" target="_blank" class="btn btn-danger">
+            <i class="bi bi-camera-reels me-2"></i>Watch on Netflix
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div id="footer" class="container-fluid py-2">
+      <div class="row">
+        <div class="col fw-semibold text-center my-2 align-items-center text-light">
+          <p>
+            <img class="me-2" src="images/st-logo.png" height="20">Stranger Things |
+            <img class="me-2" src="images/white-logo.png" height="18">rowelgabriel
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
