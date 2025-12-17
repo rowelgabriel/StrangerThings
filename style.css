@@ -33,7 +33,9 @@ body {
   background: rgba(120, 0, 0, 0.25);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 0, 0, 0.35);
-  box-shadow:
-    0 0 8px rgba(255, 0, 0, 0.25),
-    0 8px 30px rgba(0, 0, 0, 0.6);
+  transition: transform 0.25s ease;
+}
+
+.st-card:hover {
+  transform: translateY(-6px);
 }
