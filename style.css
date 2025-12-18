@@ -39,3 +39,24 @@ body {
 .st-card:hover {
   transform: translateY(-6px);
 }
+
+.page-link {
+  background-color: transparent;
+  color: rgba(255, 0, 0, 0.6);
+  border: 2px solid rgba(255, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+.page-item.active .page-link {
+  background-color: rgba(120, 0, 0, 0.25);
+  color: #fff;
+  border-color: rgba(255, 0, 0, 0.35);
+}
+
+.page-link:hover,
+.page-link:focus {
+  background-color: rgba(120, 0, 0, 0.25);
+  color: #fff;
+  border-color: rgba(255, 0, 0, 0.35);
+  box-shadow: none;
+}
